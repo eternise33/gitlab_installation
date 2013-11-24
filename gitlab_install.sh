@@ -86,3 +86,10 @@ sudo apt-get install -y nginx
 sudo cp lib/support/nginx/gitlab /etc/nginx/sites-available/gitlab
 sudo ln -s /etc/nginx/sites-available/gitlab /etc/nginx/sites-enabled/gitlab
 sudo service nginx restart
+service gitlab restart
+
+
+echo "You can now log in to your local Gitlab Server"
+echo "Just type this in your http://$gitlab_ip"
+echo "Username: admin@local.host"
+echo "Initial Password: 5iveL!fe"
